@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// route to send mail using mailtrap
+Route::get('send-mail', 'Mail\MailController@sendMail')->name('send.mail');

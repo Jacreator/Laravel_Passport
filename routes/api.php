@@ -21,3 +21,4 @@ Route::middleware('auth:api')->group(function () {
 
 Route::post('login', 'PassportController@login');
 Route::post('register', 'PassportController@register');
+Route::get('send-mail', 'Mail\MailController@sendMail')->name('send.mail');
